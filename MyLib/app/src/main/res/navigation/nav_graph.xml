@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.mylib.login.view.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/login_layout">
+        <action
+            android:id="@+id/action_loginFragment_to_bookList"
+            app:destination="@id/bookListFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookListFragment"
+        android:name="com.example.mylib.booklist.view.BookListFragment"
+        android:label="fragment_booklist"
+        tools:layout="@layout/booklist_layout">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.mylib.register.view.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/register_layout">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/loanedBooksFragment"
+        android:name="com.example.mylib.booklist.view.LoanedBookListFragment"
+        android:label="fragment_loanedbooks"
+        tools:layout="@layout/reservations_layout">
+    </fragment>
+
+    <fragment
+        android:id="@+id/addBookFragment"
+        android:name="com.example.mylib.booklist.view.AddBookFragment"
+        android:label="fragment_addbook"
+        tools:layout="@layout/add_book_layout"
+        >
+
+    </fragment>
+
+</navigation>

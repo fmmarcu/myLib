@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">MyLib</string>
+
+    <!-- LOGIN FEATURE STRING VALUES -->
+    <string name="login">Login</string>
+    <string name="login_failed">Username or password are incorrect.</string>
+    <string name="network_failure"> Network failure</string>
+    <string name="username">Username</string>
+    <string name="create_account"><u>Don\'t have an account? Make one here</u></string>
+    <string name="invalid_credentials">Invalid username or password!</string>
+
+    <!-- REGISTRATION FEATURE STRING VALUES -->
+    <string name="user_name"><u>Username</u></string>
+    <string name="password"><u>Password</u></string>
+    <string name="confirm_password"><u>Confirm password</u></string>
+    <string name="register_button">Register</string>
+    <string name="ok">OK</string>
+    <string name="register_agree">By clicking register you agree with the terms and conditions.</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="address">Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="author">Author:</string>
+    <string name="profile">My Books</string>
+    <string name="books">All Books</string>
+    <string name="add_book">Add book</string>
+    <string name="title_of_the_book">Title of the book</string>
+    <string name="issue_book">Issue book</string>
+    <string name="book_issued_successfully">Book issued successfully</string>
+    <string name="book_loaned_successfully">Your loan was successful. Enjoy your book!</string>
+    <string name="book_returned_successfully">Book returned successfully. Penalty Fee: </string>
+    <string name="author_of_the_book">Author of the book</string>
+    <string name="publishing_house">Publishing House</string>
+    <string name="edition">Edition</string>
+    <string name="days">Days</string>
+    <string name="price_day">Price/Day</string>
+    <string name="add_new_book">Add new book</string>
+    <string name="issue_a_book">Issue a book</string>
+
+</resources>

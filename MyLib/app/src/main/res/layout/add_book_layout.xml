@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loginBackgroundBlue">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/issueBook_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/loginBackgroundBlue">
+
+        <TextView
+            android:id="@+id/page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textColor="@color/colorYellow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="30dp"
+            />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/issueBook_fields_container"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:background="@drawable/rounded_corner_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/issue_book_title"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginBottom="@dimen/edit_text_margin_bottom"
+                android:background="@drawable/rounded_corner_yellow"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 "
+                android:elevation="@dimen/elevation"
+                android:gravity="center"
+                android:hint="@string/title_of_the_book"
+                android:layout_centerHorizontal="true"
+                android:inputType="textFilter"
+                android:layout_marginTop="30dp"
+                 />
+
+            <EditText
+                android:id="@+id/issue_book_author"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginBottom="@dimen/edit_text_margin_bottom"
+                android:background="@drawable/rounded_corner_yellow"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 "
+                android:elevation="@dimen/elevation"
+                android:gravity="center"
+                android:hint="@string/author_of_the_book"
+                android:layout_centerHorizontal="true"
+                android:inputType="textFilter"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/issue_book_title"
+                />
+
+            <Button
+                android:id="@+id/issueBook_button"
+                android:layout_width="@dimen/newLoginButtonWidth"
+                android:layout_height="@dimen/newLoginButtonHeight"
+                android:layout_marginTop="@dimen/marginTopLoginButton"
+                android:background="@drawable/rounded_corner_buttons"
+                android:backgroundTint="@color/colorYellow"
+                android:elevation="@dimen/loginElevation"
+                android:gravity="center"
+                android:foregroundGravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:text="@string/issue_book"
+                android:textAllCaps="false"
+                android:layout_below="@id/issue_book_author"
+                 />
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/addBook_container"
+            android:layout_width="300dp"
+            android:layout_height="500dp"
+            android:visibility="gone"
+            android:background="@drawable/rounded_corner_blue"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <EditText
+                android:id="@+id/book_title"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginBottom="@dimen/edit_text_margin_bottom"
+                android:background="@drawable/rounded_corner_yellow"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 "
+                android:elevation="@dimen/elevation"
+                android:gravity="center"
+                android:hint="@string/title_of_the_book"
+                android:layout_centerHorizontal="true"
+                android:inputType="textFilter"
+                android:layout_marginTop="30dp"
+                />
+
+            <EditText
+                android:id="@+id/book_author"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginBottom="@dimen/edit_text_margin_bottom"
+                android:background="@drawable/rounded_corner_yellow"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                android:elevation="@dimen/elevation"
+                android:gravity="center"
+                android:hint="@string/author_of_the_book"
+                android:layout_centerHorizontal="true"
+                android:inputType="textFilter"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/book_title"
+                />
+
+            <EditText
+                android:id="@+id/book_publishing_house"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginBottom="@dimen/edit_text_margin_bottom"
+                android:background="@drawable/rounded_corner_yellow"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 "
+                android:elevation="@dimen/elevation"
+                android:gravity="center"
+                android:hint="@string/publishing_house"
+                android:layout_centerHorizontal="true"
+                android:inputType="textFilter"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/book_author"
+                />
+
+            <EditText
+                android:id="@+id/bookEdition"
+                android:layout_width="77dp"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginBottom="@dimen/edit_text_margin_bottom"
+                android:background="@drawable/rounded_corner_yellow"
+                android:elevation="@dimen/elevation"
+                android:gravity="center"
+                android:hint="@string/edition"
+                android:layout_marginStart="25dp"
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/book_publishing_house"
+                />
+
+            <EditText
+                android:id="@+id/bookDaysForLoaning"
+                android:layout_width="77dp"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginBottom="@dimen/edit_text_margin_bottom"
+                android:background="@drawable/rounded_corner_yellow"
+                android:elevation="@dimen/elevation"
+                android:gravity="center"
+                android:hint="@string/days"
+                android:layout_marginStart="10dp"
+                android:inputType="number"
+                android:layout_toEndOf="@id/bookEdition"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/book_publishing_house"
+                />
+
+            <EditText
+                android:id="@+id/bookPricePerDay"
+                android:layout_width="77dp"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginBottom="@dimen/edit_text_margin_bottom"
+                android:background="@drawable/rounded_corner_yellow"
+                android:elevation="@dimen/elevation"
+                android:gravity="center"
+                android:hint="@string/price_day"
+                android:layout_marginStart="10dp"
+                android:inputType="numberDecimal"
+                android:layout_toEndOf="@id/bookDaysForLoaning"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/book_publishing_house"
+                />
+
+            <Button
+                android:id="@+id/addBook_button"
+                android:layout_width="@dimen/newLoginButtonWidth"
+                android:layout_height="@dimen/newLoginButtonHeight"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/rounded_corner_buttons"
+                android:backgroundTint="@color/colorYellow"
+                android:elevation="@dimen/loginElevation"
+                android:gravity="center"
+                android:foregroundGravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:text="@string/add_new_book"
+                android:textAllCaps="false"
+                android:layout_below="@id/bookEdition"
+                />
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
